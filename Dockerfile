@@ -39,8 +39,8 @@ ENV SOLR_SERVER=/solr/ontology/select
 
 USER developer
 # Geppetto:
-ENV BRANCH_BASE=update-virgo-test
-ENV BRANCH_DEFAULT=feature/react_refactoring-virgo
+ENV BRANCH_BASE update-virgo-test
+ENV BRANCH_DEFAULT feature/react_refactoring-virgo
 ENV BRANCH_ORG_GEPPETTO=$BRANCH_DEFAULT
 ENV BRANCH_ORG_GEPPETTO_FRONTEND=$BRANCH_DEFAULT
 ENV BRANCH_ORG_GEPPETTO_CORE=$BRANCH_DEFAULT
