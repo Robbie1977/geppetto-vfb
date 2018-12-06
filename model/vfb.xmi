@@ -311,9 +311,9 @@
       </queryChain>
       <queryChain
           xsi:type="gep_2:ProcessQuery"
-          name="Process Term Core"
-          description="Process Term Core"
-          queryProcessorId="vfbProcessTermInfoCore"/>
+          name="Process Term JSON"
+          description="Process Term JSON"
+          queryProcessorId="vfbProcessTermInfoJson"/>
     </fetchVariableQuery>
   </dataSources>
   <dataSources
