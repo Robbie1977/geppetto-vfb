@@ -284,7 +284,7 @@
           xsi:type="gep_2:SimpleQuery"
           name="Get term core info"
           description="Fetches term core details."
-          query="MATCH (primary {short_form: '$ID'}) RETURN { core: { short_form: primary.short_form, label: primary.label, iri: primary.iri, types: labels(primary) } , description: primary.description, comment: coalesce(primary.`annotation-comment`, [])} as term"
+          query="MATCH (primary {short_form: '$ID'}) RETURN { core: { short_form: primary.short_form, label: primary.label, iri: primary.iri, types: labels(primary) }} as term"
           countQuery="MATCH (primary {short_form: '$ID'} ) RETURN count(primary) as count"/>
       <queryChain
           xsi:type="gep_2:ProcessQuery"
