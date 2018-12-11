@@ -930,12 +930,13 @@ export default class VFBMain extends React.Component {
                                     termInfoHandler={this.termInfoHandler}
                                     ref="termInfoWidgetRef"
                                     showButtonBar={true}
-                                    order={['Name',
-                                            'Alternative Names',
-                                            'Query For',
+                                    order={['Label',
+                                            'Types',
                                             'Depicts',
                                             'Thumbnail',
+                                            'Examples',
                                             'Relationship',
+                                            'Query For',
                                             'Description',
                                             'References',
                                             'Aligned To',
