@@ -932,13 +932,14 @@ export default class VFBMain extends React.Component {
                                     showButtonBar={true}
                                     order={['Label',
                                             'Types',
-                                            'Depicts',
+                                            'Parents',
                                             'Thumbnail',
                                             'Examples',
-                                            'Relationship',
+                                            'Relationships',
                                             'Query For',
                                             'Description',
                                             'References',
+                                            'Cross References',
                                             'Aligned To',
                                             'Download']} />
         }
