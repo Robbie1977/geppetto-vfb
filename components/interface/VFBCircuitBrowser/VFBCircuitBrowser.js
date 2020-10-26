@@ -147,6 +147,19 @@ function refineData (e) {
     }
   });
 
+  if (nodes.length === 0 && links.length === 0) {
+    var node = {
+      path :  "no graph available for " + e.data.params.value,
+      id : parseInt("01"),
+      title : e.data.params.value,
+      width : e.data.params.NODE_WIDTH,
+      height : e.data.params.NODE_HEIGHT
+    };
+
+    nodes.push(node);
+    links = [];
+  }
+
   // Worker is done, notify main thread
   this.postMessage({ resultMessage: "OK", params: { results: { nodes, links }, colorLabels : presentColorLabels } });
 }
