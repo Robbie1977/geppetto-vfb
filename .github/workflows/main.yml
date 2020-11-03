@@ -186,3 +186,8 @@ jobs:
           fi
       - name: Stop VFB server   
         run: docker stop testServer
+      - name: Upload Docker registry data as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: docker-registry-data
+          path: ${{ env.REGISTRY_PATH }}/
